@@ -95,3 +95,8 @@ a{
     height: 500px; /* Ajusta la altura de las imágenes según tus necesidades */
     object-fit: cover; /* Ajusta el tamaño de la imagen sin distorsionarla */
   }
+
+
+.card {
+    border-radius: 500%;
+}
