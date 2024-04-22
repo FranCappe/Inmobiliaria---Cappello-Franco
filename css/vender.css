@@ -32,3 +32,10 @@
     background-color: #686868;
 }
   
+.text-center {
+   color: darkgray;
+}
+
+.text-primary {
+  color: black;
+}
