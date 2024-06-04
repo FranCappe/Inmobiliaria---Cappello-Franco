@@ -31,4 +31,16 @@
   #boton-arriba:hover {
     background-color: #686868;
 }
-  
+
+
+.nav-item{
+  margin-bottom: 10px;
+  background-color: #cfcfcf;
+  border-radius: 10px;
+}
+
+
+.nav-item:hover {
+  background-color: #7e7d7d; /* Cambia el color de fondo al pasar el cursor */
+  border-radius: 250px;
+}

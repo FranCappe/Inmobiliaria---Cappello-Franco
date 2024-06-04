@@ -16,6 +16,17 @@
          </div>
       <img class="logo" src= "imagenes/compra/IMO_COMPRA-removebg-preview.png" alt="">
          <nav class="navegacion" class="navbar navbar-expand-lg bg-body-tertiary">
+            <ul class="nav justify-content-center">
+       <li class="nav-item" class="boton" >
+         <a class="nav-link active" style="color: black;" aria-current="page" href="vender.html">Quiero vender</a>
+       </li>
+         <li class="nav-item">
+           <a class="nav-link active" style="color: black;" aria-current="page" href="main.html">Volver al menú</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link active" style="color: black;" aria-current="page" href="alquilar.html">Quiero alquilar</a>
+         </li>
+       </ul>
      </header>
      <div style="text-align: center;" class="alert alert-dark" role="alert">
         Nosotros queremos hacerlo posible
@@ -173,7 +184,6 @@
                   </p>
                 </div>
                 <!--Grid column-->
-      
                 <!--Grid column-->
                 <div class="col-md-5 col-12">
                   <!-- Email input -->
@@ -183,7 +193,7 @@
                   </div>
                 </div>
                 <!--Grid column-->
-      
+                <input data-mdb-ripple-init type="button" onclick="correoGuardados();" value="Enviar" style="color: rgb(0, 0, 0);" class="btn btn-outline mb-4">
                 <!--Grid column-->
                 <div class="col-auto">
                   <!-- Submit button -->
@@ -215,7 +225,18 @@
         <!-- Copyright -->
       </footer>
       <!-- Footer -->
-
+      <script>
+        function correoGuardados() {
+          var gmail = document.getElementById('email').value;
+      
+          if (gmail) {
+            alert("Se guardó correctamente, en breves nos comunicaremos con usted");
+            location.reload();
+          } else {
+            alert('Algo salió mal :(, intente nuevamente');
+          }
+        }
+      </script>
 
 
     <button onclick="irArriba()" id="boton-arriba" title="Ir arriba">↑</button>
