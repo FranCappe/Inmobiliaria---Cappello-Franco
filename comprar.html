@@ -184,29 +184,42 @@
                   </p>
                 </div>
                 <!--Grid column-->
+          
                 <!--Grid column-->
                 <div class="col-md-5 col-12">
                   <!-- Email input -->
                   <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="email" id="form5Example24" class="form-control" />
-                    <label class="form-label" for="form5Example24">Dirección de correo</label>
+                    <input type="email" id="email" class="form-control"/>
+                    <label class="form-label" for="email">Dirección de correo</label>
                   </div>
                 </div>
                 <!--Grid column-->
-                <input data-mdb-ripple-init type="button" onclick="correoGuardados();" value="Enviar" style="color: rgb(0, 0, 0);" class="btn btn-outline mb-4">
+          
                 <!--Grid column-->
                 <div class="col-auto">
                   <!-- Submit button -->
-                  <button data-mdb-ripple-init type="submit" style="color: gray;" class="btn btn-outline mb-4">
-                   Enviar
-                  </button>
+      
                 </div>
+                <input data-mdb-ripple-init type="button" onclick="correoGuardados();" value="Enviar" style="color: rgb(0, 0, 0);" class="btn btn-outline mb-4">
                 <!--Grid column-->
               </div>
               <!--Grid row-->
             </form>
           </section>
           <!-- Section: Form -->
+          <script>
+            function correoGuardados() {
+              var gmail = document.getElementById('email').value;
+          
+              if (gmail) {
+                alert("Se guardó correctamente, en breves nos comunicaremos con usted");
+                location.reload();
+              } else {
+                alert('Algo salió mal :(, intente nuevamente');
+              }
+            }
+          </script>
+          
       
           <!-- Section: Text -->
           <section class="mb-4">
@@ -225,19 +238,8 @@
         <!-- Copyright -->
       </footer>
       <!-- Footer -->
-      <script>
-        function correoGuardados() {
-          var gmail = document.getElementById('email').value;
       
-          if (gmail) {
-            alert("Se guardó correctamente, en breves nos comunicaremos con usted");
-            location.reload();
-          } else {
-            alert('Algo salió mal :(, intente nuevamente');
-          }
-        }
-      </script>
-
+      </div>
 
     <button onclick="irArriba()" id="boton-arriba" title="Ir arriba">↑</button>
     <script src="js/efectoInicio.js"></script>
